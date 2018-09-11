@@ -2,4 +2,3 @@ Configure miss: sys/dlpi.h usability
 Configure miss: sys/dlpi.h presence
 Configure miss: sys/dlpi.h
 Configure miss: if we need to enable promiscuous mode by default
-Configure miss: options.c:162:5: warning: format not a string literal and no format arguments [-Wformat-security]

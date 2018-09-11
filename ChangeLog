@@ -1,10 +1,93 @@
 Change log for iftop
-$Id: ChangeLog,v 1.29 2005/12/25 12:15:08 pdw Exp $
+$Id: ChangeLog,v 1.42 2014/01/19 20:32:50 pdw Exp $
 
 Attributions apply to all preceding items up to the next blank line.
 Unattributed items are by Paul Warren and Chris Lightfoot.
 
+1.0
+
+* Remove blinking cursor from UI
+    Gerrit Renker <renker@ualberta.ca>
+
+* Treat multicast packets as incoming, rather than incoming (IPv4) or not at
+  all (IPv6).
+    Andreas Schwab <schwab@linux-m68k.org>
+
+* Minor fixes to the man page
+* Man page documentation of -t mode.
+* Compile time warning fixes.
+    Markus Koschany <apo@gambaru.de>
+
+* Added text output mode (-t option)
+    Roman Hoog Antink <rha@open.ch> (originally by Patrik Bless)
+
+* Fix for memory leak when DNS resolution is turned off
+  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=677141
+    Olivier Allard-Jacquin <olivieraj@free.fr>
+
+* Various typos in the UI
+    Gerben Roest <g.roest@grepit.nl>
+
+* Documentation fixes
+    A. Costa <agcosta@gis.net> (via Debian)
+
+* Fix for armeb specific bug
+    Lennert Buytenhek <buytenh+debian@wantstofly.org> (via Debian)
+
+* Fix frozen order drives line totals crazy.
+    Max Alekseyev <relf@os2.ru> (via Debian)
+
+* Fix for crash on arm.
+    Joey Hess <joeyh@debian.org> (via Debian)
+
+* Fixed behaviour of "-b" option.
+    Eric Cooper <ecc@cmu.edu> (via Debian)
+
+* Support for PFLOG Interfaces
+    Richard Tóth <risko@iklub.sk>
+
+* Support for IPv6
+* Fix for performance issue with address hashing
+* Fix for failing link address detection for GNU/kfreebsd
+* Multiple portability fixes
+    Mats Erik Andersson <mats.andersson@gisladisker.se>
+
+* Improved behaviour of sort in sent/recv only mode
+    Damián Viano <des@debian.org>
+
+* FreeBSD compilation fix 
+* IPv6 reverse resolution
+    Frédéric Perrin <frederic.perrin@resel.fr>
+
+* Improved IPv6 code (removed s6_addr32 dependency)
+* Fixed support for DLT_NULL
+    Scott Bertilson <ssb@umn.edu>
+
+* Typo in usage message
+* Workaround for PuTTY issue (https://bugzilla.redhat.com/show_bug.cgi?id=546032)
+* Updates to licence text (change in FSF address)
+* Avoid an assertion failure if an "invalid" (as in outside of IPv4 or IPv6)
+  address family is encountered (Red Hat bugs #839750, #847124, #868065, #961236
+  and #1007434)
+* enable building iftop with more recent versions of autoconf/automake
+* patch to remove compile time warnings
+* Fix to avoid system call in text mode wherever possible.
+    Robert Scheck <robert@fedoraproject.org>
+
+* Attempt to detect if interface is actually up when doing autodetection.
+* Fixed segfault when selecting interfaces with empty MAC address (e.g. gprs
+  interface on Nokia N900)
+    Graham Inggs <graham@nerve.org.za>
+
+* Avoid autodetecting wmaster interfaces
+* Experimental support for IEEE802_11 radiotap interfaces (DLT 127)
+* Fixed segfault / hang when supplying multiple -i options
+* Added missing docs for -m option.
+
 0.17 12/02/06
+* Display top scale in bytes when measuring in bytes
+    Marcin Kryczek <mkay@gentoo.org>
+
 * Added support for ppp interfaces on FreeBSD (and others using DLT_PPP)
 
 * Fixed segfault bug in config file handling.
