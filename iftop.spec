@@ -4,7 +4,7 @@
 #
 Name     : iftop
 Version  : 1.0pre4
-Release  : 2
+Release  : 3
 URL      : http://www.ex-parrot.com/pdw/iftop/download/iftop-1.0pre4.tar.gz
 Source0  : http://www.ex-parrot.com/pdw/iftop/download/iftop-1.0pre4.tar.gz
 Summary  : No detailed summary available
