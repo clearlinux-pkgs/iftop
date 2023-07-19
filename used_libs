@@ -1,6 +1,4 @@
 libc.so.6
 libm.so.6
-libncurses.so.6
+libncursesw.so.6
 libpcap.so.1
-libpthread.so.0
-libtinfo.so.6
